@@ -68,7 +68,7 @@ function App() {
           I'm probably Indoors Vibing To Music Or Watching Movies(rarely)</p>
       </article>
       <section className='ribbon-box'>
-        <p>Various Technolies i use</p>
+        <p>Various Technologies i use</p>
         <div className='ribbon ribbon1'>
           <div className='run'>
             {
