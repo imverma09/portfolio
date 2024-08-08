@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import HomePage from './components/HomePage'
 import Footer from './components/Footer';
-import { Cog } from 'lucide';
 import { Link } from 'react-router-dom';
 
 function App() {
@@ -12,6 +11,10 @@ function App() {
   let date = new Date();
   let h = date.getHours();
   let m = date.getMinutes();
+  let mm = Math.floor(Math.log10(m)+1)
+  m = mm  == 1 ? '0'+m : m;
+  
+  
   const skills = [
     { icon: '★', lang: "JavaScript" },
     { icon: '★', lang: "Express" },
@@ -24,9 +27,6 @@ function App() {
     {  link: "https://word-guess-game001.netlify.app/", title: 'Word-Guess-Game', lang: "HTML/CSS, javaScript", date: "May 6 - June" },
     {  link: "https://amsssmohammadpuriya.netlify.app/", title: 'School website Template', lang: "HTML/CSS, javaScript", date: "April 17 - May" },
   ]
-  const projectHandle = (e)=>{
-      const name=   e.target.getAttribute("name");
-  }
   return (
     <>
       {
