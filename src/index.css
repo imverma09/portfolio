@@ -303,6 +303,7 @@ p:hover{
   grid-template-columns: repeat(4 ,1fr);
   gap: 20px;
 }
+
 .logo-name{
   display: flex;
   flex-wrap: wrap;
@@ -384,6 +385,7 @@ footer .intro p a:hover{
   margin: 20px 0;
   color: gray;
 }
+
 .project-section .project div{
   border-radius: 6px;
   padding: 10px;
@@ -393,6 +395,16 @@ footer .intro p a:hover{
   flex-wrap: wrap;
   flex-direction: column;
   gap: 12px;
+  width: 300px;
+  margin: auto;
+}
+.proj-grid{
+  display: grid;
+  grid-template-columns: repeat(3 ,1fr);
+  gap: 50px;
+  place-content: center;
+  justify-content: center;
+
 }
 .project-section .project div h3,.project-section .project div i , .project-section .project div p{
   color: white;
@@ -407,6 +419,9 @@ footer .intro p a:hover{
 
 @media screen and (max-width: 680px) {
   .logo-grid{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .proj-grid{
     grid-template-columns: repeat(1, 1fr);
   }
   .mail-box a{

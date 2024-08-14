@@ -22,10 +22,10 @@ function App() {
     { icon: '★', lang: "Mongo DB" },
   ]
   const project = [
-    {  link: "https://github.com/imverma09/multi-shop", title: 'Multi-shop (e-commerce)', lang: "React (single-page website)", date: "July 04 - Present" },
-    {  link: "https://github.com/imverma09/flip-game", title: 'Images-flip-Game', lang: "HTML/CSS, javaScript", date: "June 16 - July" },
-    {  link: "https://word-guess-game001.netlify.app/", title: 'Word-Guess-Game', lang: "HTML/CSS, javaScript", date: "May 6 - June" },
-    {  link: "https://amsssmohammadpuriya.netlify.app/", title: 'School website Template', lang: "HTML/CSS, javaScript", date: "April 17 - May" },
+    { img : "3.jpg", link: "https://github.com/imverma09/multi-shop", title: 'Multi-shop (e-commerce)', lang: "React (single-page website)", date: "July 04 - Present" },
+    { img : "4.jpg", link: "https://github.com/imverma09/flip-game", title: 'Images-flip-Game', lang: "HTML/CSS, javaScript", date: "June 16 - July" },
+    { img : "2.jpg", link: "https://amsssmohammadpuriya.netlify.app/", title: 'School website Template', lang: "HTML/CSS, javaScript", date: "April 17 - May" },
+    { img : "1.jpg", link: "https://word-guess-game001.netlify.app/", title: 'Word-Guess-Game', lang: "HTML/CSS, javaScript", date: "May 6 - June" },
   ]
   return (
     <>
@@ -102,12 +102,13 @@ function App() {
         <h1>PROJECTS</h1>
         <p className='pro-intro'>Most of time is spent building web products that i either find interesting or paid to do .Some of these projects are open source, so feel free to explore them and even contribute. Feel free to get in touch with me if you have any cool ideas that you'd like to discuss further or work on with me .
         </p>
-        <main className='logo-grid project'>
+        <main className='proj-grid project'>
           {
             project.map((pro,i) => {
               return (
                 <Link key={Math.random()} to={pro.link}>
                 <div>
+                  <img src={`/img/${pro.img}`} alt="" height={'100%'} width={'100%'} />
                   <h3 name={i}>{pro.title}</h3>
                   <p name={i}>{pro.lang}</p>
                   <span name={i}><i>{pro.date} </i></span>
