@@ -446,6 +446,7 @@ footer .intro p a:hover{
     font-size: 20px;
   }
   .developer{
-    font-size: 45px;
+    /* font-size: 2em; */
+    font-size: 2.793rem;
   }
 }
