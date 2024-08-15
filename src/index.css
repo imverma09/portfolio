@@ -36,6 +36,7 @@ body{
 }
 .section{
   padding: 20px 30px;
+  height: 55vh;
 }
 .front-end{
   display: flex;
@@ -443,5 +444,8 @@ footer .intro p a:hover{
   }
   .ribbon span{
     font-size: 20px;
+  }
+  .developer{
+    font-size: 45px;
   }
 }
