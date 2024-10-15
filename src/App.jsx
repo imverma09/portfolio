@@ -22,6 +22,7 @@ function App() {
     { icon: '★', lang: "Mongo DB" },
   ]
   const project = [
+    { img : "note-app.webp", link: "https://github.com/imverma09/Notes", title: 'NOTES APP', lang: "React,Express,MongoBb", date: "August - October" },
     { img : "3.webp", link: "https://github.com/imverma09/multi-shop", title: 'Multi-shop (e-commerce)', lang: "React (single-page website)", date: "July 04 - Present" },
     { img : "4.webp", link: "https://github.com/imverma09/flip-game", title: 'Images-flip-Game', lang: "HTML/CSS, javaScript", date: "June 16 - July" },
     { img : "2.webp", link: "https://amsssmohammadpuriya.netlify.app/", title: 'School website Template', lang: "HTML/CSS, javaScript", date: "April 17 - May" },
