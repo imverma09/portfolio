@@ -1,8 +1,9 @@
-import React, { useState } from 'react'
+import React, { useState , useEffect } from 'react'
 import HomePage from './components/HomePage'
 import Footer from './components/Footer';
 import { Link } from 'react-router-dom';
-
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import AOS styles
 function App() {
   const [showMenu, setShowMenu] = useState(true)
   function homePage() {
@@ -14,7 +15,13 @@ function App() {
   let mm = Math.floor(Math.log10(m)+1)
   m = mm  == 1 ? '0'+m : m;
   
-  
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration in milliseconds
+      once: true, // Animation only happens once
+    });
+  }, []);
+
   const skills = [
     { icon: '★', lang: "JavaScript" },
     { icon: '★', lang: "Express" },
@@ -107,7 +114,7 @@ function App() {
           {
             project.map((pro,i) => {
               return (
-                <Link key={Math.random()} to={pro.link}>
+                <Link key={Math.random()} to={pro.link} data-aos="flip-left">
                 <div>
                   <img src={`/img/${pro.img}`} alt="" height={'100%'} width={'100%'} />
                   <h3 name={i}>{pro.title}</h3>
